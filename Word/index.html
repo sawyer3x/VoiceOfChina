@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>配音秀api</title>
+	</head>
+<body>
+<h1>配音秀api</h1>
+
+<h2>首页 </h2>
+
+<p>热门 get方式</p>
+
+<p>http://api1.peiyinxiu.com/Api/Film/HomeData?appkey=8b232b5997100d5a&amp;area=110100&amp;pg=1&amp;t=9686&amp;token=&amp;userId=0&amp;sign=a1acd41d5dfbbd410ada28df79f48694</p>
+
+<p>下拉刷新</p>
+
+<p>http://api1.peiyinxiu.com/Api/Film/HomeData?appkey=8b232b5997100d5a&amp;area=110100&amp;pg=2&amp;t=9686&amp;token=&amp;userId=0&amp;sign=ba99e0a0ea37dc3f43e0f6469cecb94d</p>
+
+<p>频道： 更多按钮 get</p>
+
+<p><a href="http://api1.peiyinxiu.com/api/film/GetChannels?appkey=8b232b5997100d5a&amp;token=&amp;userId=0&amp;sign=b9b34dcab23821fcb1dccc4b952c6c27">http://api1.peiyinxiu.com/api/film/GetChannels?appkey=8b232b5997100d5a&amp;token=&amp;userId=0&amp;sign=b9b34dcab23821fcb1dccc4b952c6c27</a></p>
+
+<p> 上拉刷新 </p>
+
+<p>http://api1.peiyinxiu.com/api/film/GetApplyChannels?appkey=8b232b5997100d5a&amp;name=&amp;pg=2&amp;token=&amp;userId=0&amp;sign=b94c41330ec5e3eff19e646744adc729</p>
+
+<p>直播 get</p>
+
+<p>http://api1.peiyinxiu.com/Api/live/LiveList?appkey=8b232b5997100d5a&amp;pg=1&amp;token=&amp;userId=0&amp;sign=3acd5155480082729eec9c94ccb20049</p>
+
+<p> 直播的上拉刷新</p>
+
+<p>http://api1.peiyinxiu.com/Api/live/LiveList?appkey=8b232b5997100d5a&amp;pg=2&amp;token=&amp;userId=0&amp;sign=9a27bafcdcae8ed66aa79d140e69f2df</p>
+
+<p>详情页 接口 get</p>
+
+<p>http://api1.peiyinxiu.com/api/film/detail?appkey=8b232b5997100d5a&amp;filmId=29744736&amp;filmUserId=140594102&amp;token=&amp;userId=0&amp;sign=af357d36256440be4f6fcf163b2e5e83</p>
+
+<p>http://api1.peiyinxiu.com/api/film/Comments?appkey=8b232b5997100d5a&amp;commentId=0&amp;filmId=29744736&amp;filmUserId=140594102&amp;sort=2&amp;token=&amp;userId=0&amp;sign=c7c8617a278f2f09044c5d25696232ae</p>
+
+<p>http://api1.peiyinxiu.com/api/film/DetailAd?appkey=8b232b5997100d5a&amp;filmId=29744736&amp;filmUserId=140594102&amp;token=&amp;userId=0&amp;sign=af357d36256440be4f6fcf163b2e5e83</p>
+
+<p>http://api1.peiyinxiu.com/api/film/TailRecommendFilms?appkey=8b232b5997100d5a&amp;filmId=29744736&amp;filmUserId=140594102&amp;token=&amp;userId=0&amp;sign=af357d36256440be4f6fcf163b2e5e83</p>
+
+<p>http://api1.peiyinxiu.com/api/Gift/GetUserRanks?appkey=8b232b5997100d5a&amp;objectId=29744736&amp;objectType=0&amp;objectUserId=140594102&amp;pg=1&amp;token=&amp;userId=0&amp;sign=7ab6bd12cd43e77d4bf6454610862bf3</p>
+
+<p>配音部分即点击配音按钮以后</p>
+
+<p>切换台词http://api1.peiyinxiu.com/api/Gift/GetUserRanks?appkey=8b232b5997100d5a&amp;objectId=29744736&amp;objectType=0&amp;objectUserId=140594102&amp;pg=1&amp;token=&amp;userId=0&amp;sign=7ab6bd12cd43e77d4bf6454610862bf3</p>
+
+<p> 视频及歌词 http://api1.peiyinxiu.com/api/source/Detail?appkey=8b232b5997100d5a&amp;audio=&amp;cooId=&amp;favorite=&amp;filmId=28146282&amp;sourceId=980&amp;sourceUserId=10260&amp;srt=&amp;token=&amp;userId=0&amp;sign=56b4809cc9175dc43a858c4319aa1a5f</p>
+
+<p>配音秀任务分解 工期暂定一个月</p>
+
+<p>注：</p>
+
+<p>1、UI部分需要 和视频 和 录音的地方可以先空出位置</p>
+
+<p>2、将UI 和 视频 以及录音 进行响应 的方法做下注释，以便对接，使用 </p>
+
+<p>模块分割：</p>
+
+<p>1、主要分为UI 模块 </p>
+
+<p>2、视频播放弹幕等模块</p>
+
+<p>3、录音声效处理模块（目前的办法:主要研究TheAmazingAudioEngine这个库吧，此库实现了实时的声效，接下来就是该怎样直接处理文件生成一个带声效的文件）</p>
+
+<figure><img src="IMG_0092.PNG"/> <img src="IMG_0093.PNG"/><img src="IMG_0094.PNG"/><img src="IMG_0095.PNG"/><img src="IMG_0096.PNG"/></figure>
+
+</body>
+</html>
+
